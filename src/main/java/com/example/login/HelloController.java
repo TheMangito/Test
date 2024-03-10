@@ -98,6 +98,7 @@ public class HelloController {
                 ObjectWriter writer = mapper.writerWithDefaultPrettyPrinter();
                 writer.writeValue(registers, users);
             } catch (IOException e) {
+                System.out.println("hola.");
                 e.printStackTrace();
             }
         }
